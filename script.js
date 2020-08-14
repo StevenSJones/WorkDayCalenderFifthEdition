@@ -6,8 +6,8 @@ let responseNowDate = new Date();
 if (new Date().getHours() < 12) {
   $("#demo").text("Good Morning!");//Does the same as the line beneath that is commented out 
   //   document.getElementById("demo").innerHTML = "Good Afternoon!";
-} else {//else, the newDate response from the get hours method is more than 12 and you see good evenin.
-  $("demo").text("Good Evening!"); //Does the same as the line beneath thatis commented out
+} else {//else, the newDate response from the get hours method is more than 12 and you see good evening.
+  $("#demo").text("Good Evening!"); //Does the same as the line beneath that is commented out
   //   document.getElementById("demo").innerHTML = "Good Afternoon!";
 }
 
