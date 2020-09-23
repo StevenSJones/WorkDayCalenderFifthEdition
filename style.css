@@ -17,3 +17,8 @@ body {
     width: 100%;
     text-align: center;
   }
+
+  .stroke {
+    color: black;
+    -webkit-text-stroke: 3px white
+  }
