@@ -22,9 +22,9 @@ $(document).ready(function () {
     { time: "hour-16", note: "" },
   ];
 
-  var hour;//at each index the hour var becomes the object that we are dealing with. 
+  var hour; //at each index the hour var becomes the object that we are dealing with.
   for (let i = 0; i < schedule.length; i++) {
-    hour = schedule[i];//hour equal to the object returned by index i
+    hour = schedule[i]; //hour equal to the object returned by index i
     $("#" + hour.time).val(hour.note);
   }
 
