@@ -1,11 +1,6 @@
 $(document).ready(function () {
   //.ready event on the JQUERY from running before the document is done loading.
 
-  // I created 3 constant variables that I will place the return from the HTML (user input) into so that I may work with it.
-  // const $form = document.querySelector("");
-  // const $name = document.querySelector("");
-  // const $score = document.querySelector("");
-
   // 1 created a var and set it equal to the new Date () method that we get back from moment.js
   let responseNowDate = new Date();
   let now = moment();
@@ -22,9 +17,9 @@ $(document).ready(function () {
     { time: "hour-16", note: "" },
   ];
 
-  var hour;//at each index the hour var becomes the object that we are dealing with. 
+  var hour; //at each index the hour var becomes the object that we are dealing with.
   for (let i = 0; i < schedule.length; i++) {
-    hour = schedule[i];//hour equal to the object returned by index i
+    hour = schedule[i]; //hour equal to the object returned by index i
     $("#" + hour.time).val(hour.note);
   }
 
@@ -42,25 +37,14 @@ $(document).ready(function () {
     }
   });
 
-  // localStorage.setItem("schedule", scheduleArray[i])
-
-  // if (moment() =
-  //   $("button").click(function(){
-  //     $("#w3s").attr("href", "https://www.w3schools.com/jquery/");
-  //   });
-
   //If the newDate response from the get hours method is less than 12 then say good morning
   if (new Date().getHours() < 12) {
     $("#demo").text("Good Morning!");
-    $(".jumbotron").css("background-color", "yellow");
-    $(".jumbotron").css("color", "black");
+    $(".card").css("background-color", "yellow").css("color", "black");
   } else {
     //else, the newDate response from the get hours method is more than 12 and you see good evening.
-    $("#demo").text("Good Evening!"); //Does the same as the line beneath that is commented out
-    //   document.getElementById("demo").innerHTML = "Good Afternoon!";
-    $(".jumbotron")
-      .css("background-color", "midnightblue")
-      .css("color", "white"); //method calls on the same element chained together
+    $("#demo").text("Good Evening!"); //Does the same as the line
+    $(".card").css("background-color", "midnightblue").css("color", "white"); //method calls on the same element chained together
   }
 
   //2 this will grab moment obj
