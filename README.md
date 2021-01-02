@@ -1,6 +1,6 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/stevensjones/WorkDayCalenderFifthEdition)
 # Title:
-> Third-Party APIs: Work Day Scheduler
+> Work Day Scheduler
 ## Description: 
 > This browser application; which features responsive interface adaptation and dynamically updated HTML and CSS powered by JavaScript code, can be used to keep track of the todos in a 9am to 5pm workday.
 > https://stevensjones.github.io/WorkDayCalenderFifthEdition/
